@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+
+    <link rel="internalStyles" src="assets/css/style.css">
+
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+    <!-- Added a link to Bootstrap-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <h2>Cystals Collector!</h2>
+            </div>
+            <div class="container">
+                <div class="instructions">
+                    <div class="row-md-12">
+                        <div class="card col-md-10">
+                            <h5 class="card-title">
+                                Instructions:
+                            </h5>
+                            <p class="card-text">
+                                You will be given a random number at the start of the game.
+                                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                                You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.
+                                The value of each crystal is hidden from you until you click on it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr/>
+        <section>
+            <div class="container row-md-12">
+                <div class="card col-md-6">
+                    <div>Target to reach:</div>
+                        <span id="randomNumber"></span>
+                </div>
+                <div class="totalScore card text-lg-left col-md-6">
+                    <div>Your current score is:</div>
+                        <span id="total"></span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="crystalsContainer container row-md-12">
+                <img id="crystal0" class="js-crystal col-sm-2" src="assets/images/download.png"></img>
+                <img id="crystal1" class="js-crystal col-sm-2" src="assets/images/DSC_9069-256x256.jpg"></img>
+                <img id="crystal2" class="js-crystal col-sm-2" src="assets/images/GS040-G-D.jpg"></img>
+                <img id="crystal3" class="js-crystal col-sm-2" src="assets/images/giphy.gif"></img>
+            </div>
+        </section>
+        <hr/>
+        <section>
+            <div class="container row-lg-12">
+                <div class="totalScore card text-lg-left col-md-6">
+                    <div class="winsLosses">
+                        <div>Wins:</div>
+                            <span id="wins"></span>
+                        <div>Losses:</div>
+                            <span id="losses"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="assets/javascript/game.js"></script>
+</html>
